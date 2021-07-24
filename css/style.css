@@ -7,6 +7,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+:root{
+    --main-color: #8bc34a;
+}
+
 h2{
     font-size: 30px;
     font-weight: 600;
@@ -18,3 +22,32 @@ h2{
  Common CSS
 ===============
  */
+.sec-title{
+    text-align: center;
+}
+.sec-title .sub-title{
+    font-size: 10px;
+    color: #444444;
+}
+
+.sec-title h2 span{
+    color: var(--main-color);
+}
+.bottom-style{
+    position: relative;
+    width: 40px;
+    background-color: var(--main-color);
+    height: 3px;
+    margin: auto;
+    top: 7px;
+}
+.bottom-style::after{
+    content: '';
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    background-color:#e8e8e8;
+    height: 1px;
+    top: 1px;
+    z-index: -9;
+}
