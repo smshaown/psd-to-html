@@ -9,6 +9,7 @@ body{
 
 :root{
     --main-color: #8bc34a;
+    --bg-green: #4caf50;
 }
 
 h2{
@@ -55,7 +56,7 @@ h2{
 /* Button */
 .our-btn{
     padding: 17px 30px;
-    background-color: #4caf50;
+    background-color: var(--bg-green);
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
@@ -68,8 +69,17 @@ h2{
 .our-btn:hover{
     text-decoration: none;
     background-color: #fff;
-    color: #4caf50;
-    
+    color: var(--bg-green);    
+}
+.abt-btn .our-btn{
+    background-color: #fff;
+    color: var(--bg-green);
+    border: 1px solid #4caf50;
+    transition: .3s;
+}
+.abt-btn .our-btn:hover{
+    background-color: var(--bg-green);
+    color: white;
 }
 
 /*
@@ -237,6 +247,45 @@ a.hover{
 }
 .slider-arrow .left-arrow a:hover,
 .slider-arrow .right-arrow a:hover{
-    color: #4caf50;
+    color: var(--bg-green);
     text-decoration: none;
+}
+
+/*
+======================
+About
+======================
+*/
+.about {
+	margin-top: -100px;
+}
+.about-content .sec-title {
+	text-align: left;
+}
+.abt-img {
+	background: #4caf50;
+}
+.abt-img img {
+	max-width: 100%;
+	position: relative;
+	top: 40px;
+	left: 60px;
+}
+.about-content {
+	padding-top: 100px;
+	height: calc(100% + 40px);
+}
+.about-content .main-content {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.main-content {
+	padding-left: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.about-content .abt-text {
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
