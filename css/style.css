@@ -17,6 +17,10 @@ h2{
     font-weight: 600;
     color: #444444;
 }
+h2, h3{
+    color: #4444;
+}
+}
 
 /*
 ===============
@@ -289,3 +293,21 @@ About
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
+
+/* 
+============
+We do section
+============
+ */
+ .do-part icon-item {
+     font-size: 40px;
+     color: #444444;
+ }
+
+ .do-part .do-title {
+
+ }
+
+ .do-part .do-content{
+
+ }
