@@ -107,3 +107,49 @@ Header Area
 .menu-area .navbar-light .navbar-nav li a.active{
     color: var(--main-color);
 }
+.menu-area .navbar-light .navbar-nav li a:hover{
+    color: var(--main-color);
+}
+
+/*
+=================
+Slider Area
+=================
+*/
+.slider-item{
+    position: relative;
+    text-align: center;
+    color: #fff;
+    z-index: 0;
+}
+.slider-item img{
+    width: 100%;
+}
+.slider-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: red;
+    z-index: 1;
+}
+.slider-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.slider-content h2{
+    color: #fff;
+}
+
+.slider-content .para-1{
+
+}
+
+.slider-content .para-2{
+    
+}
