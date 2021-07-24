@@ -52,6 +52,25 @@ h2{
     z-index: -9;
 }
 
+/* Button */
+.our-btn{
+    padding: 17px 30px;
+    background-color: #4caf50;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+     border-radius: 30px;
+     color: #fff;
+     border: 1px solid #aeaeae;
+     transition: .3s;
+}
+.our-btn:hover{
+    text-decoration: none;
+    background-color: #fff;
+    color: #4caf50;
+    
+}
 
 /*
 ===============
@@ -116,6 +135,12 @@ Header Area
 Slider Area
 =================
 */
+a.hover{
+    text-decoration: none;
+}
+.slider{
+    position: relative;
+}
 .slider-item{
     position: relative;
     text-align: center;
@@ -132,7 +157,7 @@ Slider Area
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: red;
+    background-color: rgba(0, 0, 0,.7);
     z-index: 1;
 }
 .slider-content{
@@ -144,12 +169,74 @@ Slider Area
 }
 .slider-content h2{
     color: #fff;
+    font-size: 60px;
+    margin-top: -17px;
+    margin-bottom: 0;
 }
 
 .slider-content .para-1{
-
+    font-size: 24px;
+    font-weight: 300;
 }
 
 .slider-content .para-2{
-    
+    font-size: 16px;
+    margin-top: 14px;
+    margin-bottom: 60px;
+}
+
+.slider-btn .our-btn{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* our bullet */
+.our-bullet{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    justify-content: center; 
+}
+
+.our-bullet li {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 8px;
+    height: 8px;
+    background-color: #414141;
+    border: 2px solid #414141;
+}
+.our-bullet li.active{
+    border: 2px solid #a6a6a6;
+}
+
+/* Slider arrow */
+.slider-arrow .left-arrow,
+.slider-arrow .right-arrow{
+    position: absolute;
+    top: 50%;
+    font: 40px;
+    transform: translate(-50);
+}
+.slider-arrow .right-arrow {
+    right: 30px;
+}
+.slider-arrow .left-arrow{
+    left: 30px;
+}
+.slider-arrow .left-arrow a,
+.slider-arrow .right-arrow a{
+    color: #fff;
+  
+}
+.slider-arrow .left-arrow a:hover,
+.slider-arrow .right-arrow a:hover{
+    color: #4caf50;
+    text-decoration: none;
 }
