@@ -94,3 +94,16 @@ Header Area
 .top-right ul li a:hover{
    color: #fff;
 }
+
+/* menu-area */
+
+.menu-area .navbar-light .navbar-nav li a {
+    color: #444;
+    font-weight: 600;
+    font-size: 13px;
+    margin-right: 15px;
+    margin-left: 13px;
+}
+.menu-area .navbar-light .navbar-nav li a.active{
+    color: var(--main-color);
+}
