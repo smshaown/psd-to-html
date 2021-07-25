@@ -17,16 +17,16 @@ h2{
     font-weight: 600;
     color: #444444;
 }
-h2, h3{
-    color: #4444;
-}
-}
+
 
 /*
 ===============
  Common CSS
 ===============
  */
+ .wrapper{
+     overflow: hidden;
+ }
 .sec-title{
     text-align: center;
 }
@@ -299,15 +299,39 @@ About
 We do section
 ============
  */
+ .we-do{
+     background-color: #fafafa;
+     margin-top: 40px;
+     padding-top: 100px;
+     padding-bottom: 100px;
+ }
+ .do-part{
+     margin-top: 20px;
+     margin-bottom: 20px;
+ }
+
  .do-part icon-item {
      font-size: 40px;
      color: #444444;
  }
 
- .do-part .do-title {
 
+ .do-part .do-title h4{
+     font-size: 18px;
+     position: relative;
+     padding-bottom: 10px;
+ }
+ .do-part .do-title h4::after{
+     content: "";
+     position: absolute;
+     width: 30px;
+     height: 1px;
+     background-color: #808080;
+     bottom: 0;
+     left: 0;
  }
 
- .do-part .do-content{
 
+ .we-img img {
+     max-width: 130%;
  }
