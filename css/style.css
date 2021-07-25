@@ -334,5 +334,49 @@ We do section
 
  .we-img img {
      max-width: 130%;
-     margin-bottom: -30%;
+     margin-bottom: -40%;
+ }
+
+
+ /* 
+============
+Work
+============
+ */ 
+
+ .work{
+     padding-top: 20px;
+ }
+
+ .work-nav{
+     margin-top: 80px;
+ }
+
+ .work-nav ul{
+     margin: 0;
+     padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+ }
+
+ .work-nav ul li {
+     font-size: 13px;
+     color: #444444;
+     padding : 8px;
+     position: relative;
+ }
+
+ .work-nav ul li:after {
+     content: "";
+     position: absolute;
+     height: 12px;
+     width: 1px;
+     background-color: #444444;
+     right: 0;
+     top: 12px;
+ }
+
+ .work-nav ul li.active{
+     color: var(--main-color);
  }
