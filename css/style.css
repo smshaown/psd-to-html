@@ -342,81 +342,84 @@ We do section
  }
 
 
- /* 
-============
+/*
+========================
 Work
-============
- */ 
+========================
+*/
+.work {
+	padding-top: 80px;
+}
+.work-nav {
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
+.work-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+.work-nav ul li {
+	font-size: 13px;
+	color: #444444;
+	padding: 8px;
+	position: relative;
+	cursor: pointer;
+}
+.work-nav ul li.mixitup-control-active {
+	color: #4caf50;
+}
+.work-nav ul li:after {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 1px;
+    background: #444444;
+    right: 0;
+    top: 12px;
+}
+.work-nav ul li:last-child:after {
+	width: 0;
+}
+.each-item img {
+	max-width: 100%;
+	display: block;
+	width: 100%;
+}
+.each-item {
+	position: relative;
 
- .work{
-     padding-top: 20px;
- }
+}
 
- .work-nav{
-     margin-top: 80px;
-     margin-bottom: 30px;
- }
+.each-when-hover {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(76,173,79,.9);
+	text-align: center;
+	transform: scale(0);
+	transition: .3s;
+}
+.each-item:hover .each-when-hover {
+	transform: scale(1);
+}
+.each-when-hover span {
+    font-size: 60px;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
 
- .work-nav ul{
-     margin: 0;
-     padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
- }
 
- .work-nav ul li {
-     font-size: 13px;
-     color: #444444;
-     padding : 8px;
-     position: relative;
- }
 
- .work-nav ul li:after {
-     content: "";
-     position: absolute;
-     height: 12px;
-     width: 1px;
-     background-color: #444444;
-     right: 0;
-     top: 12px;
- }
 
- .work-nav ul li.active{
-     color: var(--main-color);
- }
-
- .each-item img {
-     max-width: 100%;
-     display: block;
-     width: 100%;
- }
-
- .each-item{
-    position: relative;
-
- }
-
- .each-when-hover{
-     position: absolute;
-     left: 0;
-     right: 0;
-     top: 0;
-     bottom: 0;
-     background-color: rgba(76, 178, 79,.9);
-     text-align: center;
-     transform: scale(0);
-     transition: .3s;
- }
- .each-item:hover  .each-when-hover{
-     transform: scale(1);
- }
- .each-when-hover span {
-     font-size: 60px;
-     color: #fff;
-     display: inline-block;
-     position: absolute;
-     left: 50%;
-     top: 50%;
-     transform: translate(-50%, -50%);
- }
+.test img {
+    max-width: 100%;
+}

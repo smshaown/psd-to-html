@@ -11,6 +11,8 @@
     <!-- Font Awesome link -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">   
 
+    <!-- FancyBox -->
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
 
     <!-- style-sheet -->
     <link rel="stylesheet" href="css/style.css">
@@ -263,89 +265,115 @@
 </section>
 <!-- We do Area END -->
 
-<!-- Work Area Start -->
-<section class="work">
+ <!-- Work Area Start  -->
+ <section class="work">
     <div class="container">
+        <!-- Section Title -->
         <div class="sec-title">
             <div class="sub-title">Proudly Displaying Projects</div>
             <h2>Recent <span>Work</span></h2>
             <div class="bottom-style"></div>
-        </div> <!--/.sec-title -->
+        </div> <!-- /.sec-title -->
+        
         <div class="work-nav">
             <ul>
-                <li class="active">All</li>
-                <li>Web Design</li>
-                <li>Graphic Design</li>
-                <li>Branding</li>
-                <li>Web Development</li>
-                <li>Photography</li>
+                <li class="mixitup-control-active" data-filter="all">All</li>
+                <li data-filter=".web-design">Web Design</li>
+                <li data-filter=".grahpic">Graphic Design</li>
+                <li data-filter=".branding">Branding</li>
+                <li data-filter=".web-dev">Web Development</li>
+                <li data-filter=".photography">Photography</li>
             </ul>
-        </div> <!--/.work-nav-->
+        </div> <!-- /.work-nav -->
+        
         <!-- Gallery -->
         <div class="row gallery">
-            <div class="col-md-4 padding-arround">
+            <div class="mix branding grahpic photography col-md-4 padding-arround">
                 <div class="each-item">
-                    <img src="images/gallery/post1.jpg" alt="">
+                    <img src="images/gallery/post1.jpg" alt="Gallery Image">
                     <div class="each-when-hover">
-                        <span>+</span>
-                    </div>
-                </div> <!--/each-item-->
-            </div> <!--/.col-->
-
-          
-            <div class="col-md-4 padding-arround">
+                        <a data-fancybox="common-name" href="images/gallery/post1.jpg">
+                            <span>+</span>
+                        </a>
+                    </div> <!-- /.each-when-hover -->
+                </div> <!-- /.each-item -->
+            </div> <!-- /.col -->
+            <div class="mix web-design col-md-4 padding-arround">
                 <div class="each-item">
-                    <img src="images/gallery/post2.jpg" alt="">
+                    <img src="images/gallery/post2.jpg" alt="Gallery Image">
                     <div class="each-when-hover">
-                        <span>+</span>
-                    </div>
-                </div> <!--/each-item-->
-            </div> <!--/.col-->
-
-
-            <div class="col-md-4 padding-arround">
+                        <a data-fancybox="common-name" href="images/gallery/post2.jpg">
+                            <span>+</span>
+                        </a>
+                    </div> <!-- /.each-when-hover -->
+                </div> <!-- /.each-item -->
+            </div> <!-- /.col -->
+            <div class="mix grahpic branding col-md-4 padding-arround">
                 <div class="each-item">
-                    <img src="images/gallery/post1.jpg" alt="">
+                    <img src="images/gallery/post1.jpg" alt="Gallery Image">
                     <div class="each-when-hover">
-                        <span>+</span>
-                    </div>
-                </div> <!--/each-item-->
-            </div> <!--/.col-->
-
-
-
-            <div class="col-md-4 padding-arround">
+                        <a data-fancybox="common-name" href="images/gallery/post3.jpg">
+                            <span>+</span>
+                        </a>
+                    </div> <!-- /.each-when-hover -->
+                </div> <!-- /.each-item -->
+            </div> <!-- /.col -->
+            <div class="mix photography web-design col-md-4 padding-arround">
                 <div class="each-item">
-                    <img src="images/gallery/post6.jpg" alt="">
+                    <img src="images/gallery/post6.jpg" alt="Gallery Image">
                     <div class="each-when-hover">
-                        <span>+</span>
-                    </div>
-                </div> <!--/each-item-->
-            </div> <!--/.col-->
-
-
-            <div class="col-md-4 padding-arround">
+                        <a data-fancybox="common-name" href="images/gallery/post4.jpg">
+                            <span>+</span>
+                        </a>
+                    </div> <!-- /.each-when-hover -->
+                </div> <!-- /.each-item -->
+            </div> <!-- /.col -->
+            <div class="mix web-dev branding grahpic col-md-4 padding-arround">
                 <div class="each-item">
-                    <img src="images/gallery/post5.jpg" alt="">
+                    <img src="images/gallery/post5.jpg" alt="Gallery Image">
                     <div class="each-when-hover">
-                        <span>+</span>
-                    </div>
-                </div> <!--/each-item-->
-            </div> <!--/.col-->
-
-            <div class="col-md-4 padding-arround">
+                        <a data-fancybox="common-name" href="images/gallery/post5.jpg">
+                            <span>+</span>
+                        </a>
+                    </div> <!-- /.each-when-hover -->
+                </div> <!-- /.each-item -->
+            </div> <!-- /.col -->
+            <div class="mix grahpic web-design col-md-4 padding-arround">
                 <div class="each-item">
-                    <img src="images/gallery/post6.jpg" alt="">
+                    <img src="images/gallery/post6.jpg" alt="Gallery Image">
                     <div class="each-when-hover">
-                        <span>+</span>
-                    </div>
-                </div> <!--/each-item-->
-            </div> <!--/.col-->
+                        <a data-fancybox="common-name" href="https://youtu.be/VUWQ0YW9zdk">
+                            <span>+</span>
+                        </a>
+                    </div> <!-- /.each-when-hover -->
+                </div> <!-- /.each-item -->
+            </div> <!-- /.col -->
+            
+        </div> <!-- /.row -->
+      
+    </div> <!-- /.container -->
+</section> <!-- /.work -->
 
-        </div><!--/.row-->
-    </div> <!--/.container-->
-</section> <!--/.work-->
-<!-- Work Area End -->
+
+
+<!-- Tab Area Start -->
+    <div class="tav-area">
+        <div class="tab-list">
+            <div class="container">
+                <ul class="nav our-nav-item">
+                    <li><a href="#"><i class="fas fa-chart-line"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- Tab Area End --> 
+
+
+
+
+
+
+
 
 
 
@@ -374,7 +402,13 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- Mixitup -->
     <script src="js/mixitup.min.js"></script>
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
     <!-- Main js -->
     <script src="js/main.js"></script>
+
+    <script>
+        var mixer = mixitup('.gallery');
+        </script>
   </body>
 </html>
