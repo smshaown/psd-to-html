@@ -277,12 +277,12 @@
         
         <div class="work-nav">
             <ul>
-                <li class="mixitup-control-active" data-filter="all">All</li>
-                <li data-filter=".web-design">Web Design</li>
-                <li data-filter=".grahpic">Graphic Design</li>
-                <li data-filter=".branding">Branding</li>
-                <li data-filter=".web-dev">Web Development</li>
-                <li data-filter=".photography">Photography</li>
+                <li our-mix-control class="mixitup-control-active" data-filter="all">All</li>
+                <li our-mix-control data-filter=".web-design">Web Design</li>
+                <li our-mix-control data-filter=".grahpic">Graphic Design</li>
+                <li our-mix-control data-filter=".branding">Branding</li>
+                <li our-mix-control data-filter=".web-dev">Web Development</li>
+                <li our-mix-control data-filter=".photography">Photography</li>
             </ul>
         </div> <!-- /.work-nav -->
         
@@ -357,20 +357,72 @@
 
 
 <!-- Tab Area Start -->
-    <div class="tav-area">
+    <div class="tab-area">
         <div class="tab-list">
             <div class="container">
                 <ul class="nav our-nav-item">
-                    <li><a href="#"><i class="fas fa-chart-line"></i>Core Value</a></li>  <li><a href="#"><i class="fas fa-chart-line"></i>Core Feature</a></li>  <li><a href="#"><i class="fas fa-chart-line"></i>Core History</a></li>
+                    <li><a href="#tab-content1" data-toggle="tab"><i class="fas fa-chart-line"></i>Core Value</a></li>  
+                    <li><a class="active" href="#tab-content2" data-toggle="tab"><i class="fas fa-chart-line"></i>Core Feature</a></li>  <li><a href="#tab-content3" data-toggle="tab"><i class="fas fa-chart-line"></i>Core History</a></li>
                 </ul>
-            </div>
+            </div><!--/.container-->
+        </div><!--/.tab-list--> 
+        <div class="our-tab-content">
+            <div class="container tab-content">
+                <div class="tab-pane show active fade" id="tab-content1">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h3>Start Your Business Today</h3>
+                            <p>Lorem ipsum dolor sit amet, in exerci interpretaris signiferumque nam, simul clita mediocrem ea sit. Legere euismod usu cu, everti officiis in pri, impetus placerat eu est. Choro diceret fuisset ex eam. Quo at illud conceptam. Errem dictas te pro, everti animal accumsan eum an, pri gloriatur adversarium ex. His ea singulis adipiscing, at probo liber prompta eam, eam putant tritani ea.</p>
+                            <p>Lorem ipsum dolor sit amet, in exerci interpretaris signiferumque nam, simul clita mediocrem ea sit. Legere euismod usu cu, everti officiis in pri, impetus placerat eu est. Choro diceret fuisset ex eam. Quo at illud conceptam.</p>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="images//gallery/post1.jpg" alt="">
+                        </div>
+                    </div> <!--/.row-->
+                </div>               
+                <div class="tab-pane fade " id="tab-content2">
+                 <div class="row">
+                    <div class="col-md-7">
+                        <h3>Start Your Business Today</h3>
+                        <p>Lorem ipsum dolor sit amet, in exerci interpretaris signiferumque nam, simul clita mediocrem ea sit. Legere euismod usu cu, everti officiis in pri, impetus placerat eu est. Choro diceret fuisset ex eam. Quo at illud conceptam. Errem dictas te pro, everti animal accumsan eum an, pri gloriatur adversarium ex. His ea singulis adipiscing, at probo liber prompta eam, eam putant tritani ea.</p>
+                        <p>Lorem ipsum dolor sit amet, in exerci interpretaris signiferumque nam, simul clita mediocrem ea sit. Legere euismod usu cu, everti officiis in pri, impetus placerat eu est. Choro diceret fuisset ex eam. Quo at illud conceptam.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images//gallery/post2.jpg" alt="">
+                    </div>
+                </div> <!--/.row-->
+                 </div>
+                 <div class="tab-pane fade" id="tab-content3">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h3>Start Your Business Today</h3>
+                        <p>Lorem ipsum dolor sit amet, in exerci interpretaris signiferumque nam, simul clita mediocrem ea sit. Legere euismod usu cu, everti officiis in pri, impetus placerat eu est. Choro diceret fuisset ex eam. Quo at illud conceptam. Errem dictas te pro, everti animal accumsan eum an, pri gloriatur adversarium ex. His ea singulis adipiscing, at probo liber prompta eam, eam putant tritani ea.</p>
+                        <p>Lorem ipsum dolor sit amet, in exerci interpretaris signiferumque nam, simul clita mediocrem ea sit. Legere euismod usu cu, everti officiis in pri, impetus placerat eu est. Choro diceret fuisset ex eam. Quo at illud conceptam.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images//gallery/post6.jpg" alt="">
+                    </div>
+                </div> <!--/.row-->
+                 </div>
+            </div> <!--/.container-->
         </div>
-    </div>
+    </div> <!--/.tab-area-->
 <!-- Tab Area End --> 
 
 
 
-
+<!-- Big Banner Area Start -->
+    <div class="big-banner">
+        <div class="container">
+         <div class="banner-content">
+            <h2>have you fall in love with this theme yet?</h2>
+           <div class="big-btn">
+            <a href="#" class="our-btn">DISCOVER WHAT LUXURY TRULY MEANS </a>
+           </div>
+         </div>
+        </div> <!--/.container -->
+    </div> <!--/.big-banner-->
+<!-- Big Banner Area End -->
 
 
 
@@ -392,6 +444,7 @@
  -->
 
 
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -408,7 +461,13 @@
     <script src="js/main.js"></script>
 
     <script>
-        var mixer = mixitup('.gallery');
+        var container = document.querySelector('.gallery');
+        var mixer = mixitup(container, {
+            selectors: {
+                control: '[our-mix-control]'
+            }
+        })
+
         </script>
   </body>
 </html>
