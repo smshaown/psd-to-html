@@ -477,7 +477,6 @@ ul.our-nav-item li a.active{
      background: url("../images/1.jpg");
      text-align: center;    
      border-bottom: 7px solid var(--main-color);
-     margin-bottom: 500px;
      position: relative;
      background-attachment: fixed;
  }
